@@ -29,6 +29,7 @@
 - `./AlignReads.sh` (2)
 	- Cleaned (trimmed and clipped) paired-end reads were aligned using `BowTie2`
 	- Only reads that aligned concordantly were stored for down-stream use
+- BigWig files can be optionally created by `bamCoverage -b reads.bam -o coverage.bw` using the [deepTools](https://deeptools.readthedocs.io/en/develop/content/tools/bamCoverage.html) suite of tools
 
 - `./CountExactConcs.py` (optional)
 	- Counts and plots number of alignments that aligned exactly one time
