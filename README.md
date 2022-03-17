@@ -36,7 +36,7 @@
 
 - ./FilterSams.sh (3)
 	- Only reads that aligned concordantly **<u>EXACTLY ONCE</u>** were pulled out of the SAM files resulting from `BowTie2`
-	  - Chosen to be conservative and not take multi-mapping reads
+	  - Chosen to be conservative and not take multi-mapping reads, especially due to the large number of repeats within the genome
 	
 	    <br>
 
