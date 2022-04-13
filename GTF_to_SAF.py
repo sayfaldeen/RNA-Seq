@@ -44,7 +44,7 @@ def GTF_to_SAF(gtf_file_name):
 
     """
     # Clean the GTF file
-    gtf_file_name = "../AssemblyFiles/GCF_000008685.2_ASM868v2_genomic.gtf"
+    #gtf_file_name = "../AssemblyFiles/GCF_000008685.2_ASM868v2_genomic.gtf"
     gtf_c = gtf_file_name.replace(".gtf", "_cleaned.gtf")
     sp.run(f"grep -v '#' {gtf_name} > {gtf_c}", shell=True)
     gtf = pd.read_csv(gtf_c, sep="\t", header=None)
