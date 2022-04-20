@@ -73,4 +73,4 @@ def GTF_to_SAF(gtf_file_name):
     return saf
 
 # Run the function and save the output
-GTF_to_SAF(gtf_name).to_csv("args.out", sep="\t")
+GTF_to_SAF(gtf_file_name).to_csv(f"{args.out}", sep="\t")
